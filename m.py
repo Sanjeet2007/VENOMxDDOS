@@ -8,7 +8,7 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7363343751:AAGhyum_gMywo3JuM1n58RTKiJIzvEwS7wc')
+bot = telebot.TeleBot('6775242061:AAFzhh8pOomG6qHCd-lY0QV763urQ7zhueA')
 
 # Admin user IDs
 admin_id = ["5816432312"]
@@ -307,7 +307,7 @@ def handle_bgmi(message):
             target = command[1]
             port = int(command[2])  # Convert port to integer
             time = int(command[3])  # Convert time to integer
-            if time > 600:
+            if time > 1000:
                 response = "Error: Time interval must be less than 600."
             else:
                 record_command_logs(user_id, '/bgmi', target, port, time)
